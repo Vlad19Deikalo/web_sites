@@ -248,4 +248,151 @@ a {
     line-height: 1.6;
 }
 
+/* Адаптація для екранів шириною до 1024px */
+@media (max-width: 1024px) {
+    .header nav {
+        flex-wrap: wrap;
+    }
+    .menu, .social {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .menu li, .social li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Адаптація для екранів шириною до 768px */
+@media (max-width: 768px) {
+    .offer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .offer_text {
+        max-width: 100%;
+    }
+    .offer_img {
+        margin-right: 0;
+    }
+    .circles {
+        width: 100%;
+        height: auto;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .circle {
+        width: 50px;
+        height: 50px;
+        font-size: 12px;
+    }
+}
+
+/* Адаптація для екранів шириною до 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    .menu li, .social li {
+        font-size: 14px;
+    }
+    .offer_text h1 {
+        font-size: 24px;
+    }
+    .offer_text p {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .feature-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature-item {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .social {
+        flex-direction: column;
+    }
+
+    .social li {
+        margin: 10px 0;
+    }
+
+    .offer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .offer_text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .offer_text h1 {
+        font-size: 24px;
+    }
+
+    .offer_text p {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .offer_img {
+        margin: 0;
+        width: 100%;
+    }
+
+    .offer_img img {
+        width: 80%;
+    }
+
+    .circles {
+        display: none;
+    }
+
+    .features {
+        padding: 30px 0;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-item {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
 
